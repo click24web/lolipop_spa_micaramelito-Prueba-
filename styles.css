@@ -1,8 +1,4 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:'Poppins',sans-serif;
@@ -31,9 +27,7 @@ align-items:center;
 gap:10px;
 }
 
-.logo-img{
-height:45px;
-}
+.logo-img{height:45px;}
 
 .brand{
 font-weight:600;
@@ -41,8 +35,12 @@ color:#ff8acb;
 }
 
 .menu-icon{
-font-size:25px;
+font-size:22px;
 cursor:pointer;
+background:#ff8acb;
+color:white;
+padding:6px 12px;
+border-radius:10px;
 }
 
 /* MENU */
@@ -54,32 +52,26 @@ top:70px;
 left:0;
 width:100%;
 background:linear-gradient(to bottom,#fff,#ffeaf6);
-padding:30px 20px;
+padding:30px;
 gap:20px;
 border-radius:0 0 20px 20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
 #menu a{
-font-family:'Poppins',sans-serif;
 font-size:18px;
 font-weight:600;
 color:#ff8acb;
 text-decoration:none;
 text-align:center;
-transition:0.3s;
-}
-
-#menu a:hover{
-color:#d88bff;
 }
 
 /* HERO */
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.7)),
+linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.6)),
 url('lolipop/EXPERIENCIA%20DE%20LUJO%20SPA%20LOLIPOP/lujo1.jpg') center/cover no-repeat;
+background-attachment:fixed;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -91,8 +83,16 @@ padding:20px;
 font-size:clamp(2rem,5vw,3rem);
 }
 
-.hero p{
-margin:15px 0;
+/* GALERIA */
+.galeria{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+}
+
+.galeria img{
+width:100%;
+height:200px;
+object-fit:cover;
 }
 
 /* BOTON */
@@ -117,7 +117,10 @@ text-align:center;
 font-family:'Great Vibes',cursive;
 font-size:clamp(2.5rem,6vw,3.5rem);
 color:#ff8acb;
-margin-bottom:20px;
+}
+
+.subtitle{
+margin:20px 0;
 }
 
 /* GRID */
@@ -133,8 +136,17 @@ background:white;
 border-radius:20px;
 padding:20px;
 box-shadow:0 15px 40px rgba(255,138,203,0.15);
+transition:0.3s;
 display:flex;
 flex-direction:column;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+}
+
+.destacada{
+border:2px solid #ff8acb;
 }
 
 .card img{
@@ -145,18 +157,8 @@ border-radius:15px;
 margin-bottom:10px;
 }
 
-.card p{
-margin-bottom:10px;
-line-height:1.5;
-}
+.extra{display:none;}
 
-/* TEXTO OCULTO */
-.extra{
-display:none;
-text-align:left;
-}
-
-/* BOTON VER MAS */
 .card button{
 margin-top:10px;
 background:#ff8acb;
@@ -165,6 +167,11 @@ color:white;
 padding:10px;
 border-radius:20px;
 cursor:pointer;
+}
+
+/* CONTACTO */
+.contacto{
+background:#fff0f7;
 }
 
 /* WHATSAPP */
@@ -177,13 +184,20 @@ color:white;
 font-size:25px;
 padding:15px;
 border-radius:50%;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
 }
 
 /* MOBILE */
 @media (max-width:768px){
 
-.navbar{
-flex-direction:row;
+.galeria{
+grid-template-columns:1fr;
 }
 
 .grid{
