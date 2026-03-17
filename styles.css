@@ -2,7 +2,8 @@ body{
 font-family:Poppins;
 margin:0;
 background:#fff7fb;
-padding-top:80px;
+padding-top:90px;
+overflow-x:hidden;
 }
 
 .navbar{
@@ -10,7 +11,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:10px;
-background:white;
+background:#ffe4f2;
 position:fixed;
 width:100%;
 top:0;
@@ -23,8 +24,8 @@ height:70px;
 
 .brand{
 font-family:'Great Vibes';
-font-size:28px;
-color:#ff8acb;
+font-size:30px;
+color:#ff4fa3;
 position:absolute;
 left:50%;
 transform:translateX(-50%);
@@ -38,7 +39,7 @@ cursor:pointer;
 #menu{
 display:none;
 flex-direction:column;
-background:white;
+background:#ffe4f2;
 position:absolute;
 top:80px;
 width:100%;
@@ -53,20 +54,17 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 }
 
 .section{
-padding:80px 20px;
+padding:60px 15px;
 text-align:center;
-}
-
-.subtitle{
-margin:20px 0;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
@@ -74,34 +72,39 @@ gap:20px;
 background:white;
 border-radius:20px;
 padding:15px;
-box-shadow:0 10px 30px rgba(255,138,203,0.2);
-transition:0.3s;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+display:flex;
+flex-direction:column;
+gap:10px;
 }
 
-.card:hover{
-transform:translateY(-5px);
+.galeria-card{
+display:flex;
+gap:5px;
+overflow-x:auto;
 }
 
-.card img{
-width:100%;
-height:200px;
+.galeria-card img{
+width:100px;
+height:100px;
 object-fit:cover;
-border-radius:15px;
-margin-bottom:10px;
+border-radius:10px;
 }
 
 .card h3{
-color:#ff8acb;
+color:#ff4fa3;
+}
+
+.card p{
+font-size:14px;
 }
 
 .btn{
-background:#ff8acb;
+background:#ff4fa3;
 color:white;
-padding:10px 20px;
-border-radius:20px;
+padding:10px;
+border-radius:25px;
 text-decoration:none;
-display:inline-block;
-margin-top:10px;
 }
 
 .contacto{
