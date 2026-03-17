@@ -2,18 +2,32 @@ body{
 font-family:Poppins;
 margin:0;
 background:#fff7fb;
+padding-top:80px;
 }
 
 .navbar{
 display:flex;
 justify-content:space-between;
+align-items:center;
 padding:10px;
 background:white;
 position:fixed;
 width:100%;
+top:0;
 }
 
-.logo-img{height:40px;}
+.logo-img{
+height:70px;
+}
+
+.brand{
+font-family:'Great Vibes';
+font-size:28px;
+color:#ff8acb;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+}
 
 .menu-icon{
 font-size:25px;
@@ -25,22 +39,16 @@ display:none;
 flex-direction:column;
 background:white;
 position:absolute;
-top:60px;
+top:80px;
 width:100%;
-}
-
-#menu li{
-padding:10px;
-text-align:center;
 }
 
 .hero{
 height:100vh;
+background:url('lolipop/EXPERIENCIA%20DE%20LUJO%20SPA%20LOLIPOP/lujo1.jpg') center/cover;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
-background:#ffd6ec;
 text-align:center;
 }
 
@@ -51,8 +59,8 @@ text-align:center;
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
 }
 
 .card img{
@@ -66,16 +74,4 @@ color:white;
 padding:10px 20px;
 border-radius:20px;
 text-decoration:none;
-display:inline-block;
-margin-top:10px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
 }
