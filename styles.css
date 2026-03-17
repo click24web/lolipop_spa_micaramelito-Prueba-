@@ -1,207 +1,81 @@
-*{margin:0;padding:0;box-sizing:border-box;}
-
 body{
-font-family:'Poppins',sans-serif;
+font-family:Poppins;
+margin:0;
 background:#fff7fb;
-color:#333;
-padding-top:80px;
 }
 
-/* NAVBAR */
 .navbar{
 display:flex;
 justify-content:space-between;
-align-items:center;
-padding:10px 20px;
+padding:10px;
 background:white;
 position:fixed;
-top:0;
 width:100%;
-z-index:100;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
-.nav-left{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo-img{height:45px;}
-
-.brand{
-font-weight:600;
-color:#ff8acb;
-}
+.logo-img{height:40px;}
 
 .menu-icon{
-font-size:22px;
+font-size:25px;
 cursor:pointer;
-background:#ff8acb;
-color:white;
-padding:6px 12px;
-border-radius:10px;
 }
 
-/* MENU */
 #menu{
 display:none;
 flex-direction:column;
+background:white;
 position:absolute;
-top:70px;
-left:0;
+top:60px;
 width:100%;
-background:linear-gradient(to bottom,#fff,#ffeaf6);
-padding:30px;
-gap:20px;
-border-radius:0 0 20px 20px;
 }
 
-#menu a{
-font-size:18px;
-font-weight:600;
-color:#ff8acb;
-text-decoration:none;
+#menu li{
+padding:10px;
 text-align:center;
 }
 
-/* HERO */
 .hero{
 height:100vh;
-background:
-linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.6)),
-url('lolipop/EXPERIENCIA%20DE%20LUJO%20SPA%20LOLIPOP/lujo1.jpg') center/cover no-repeat;
-background-attachment:fixed;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h2{
-font-size:clamp(2rem,5vw,3rem);
-}
-
-/* GALERIA */
-.galeria{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-}
-
-.galeria img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-/* BOTON */
-.btn{
-background:linear-gradient(45deg,#ff8acb,#d88bff);
-color:white;
-padding:12px 25px;
-border-radius:30px;
-text-decoration:none;
-display:inline-block;
-margin-top:10px;
-font-weight:600;
-}
-
-/* SECCIONES */
-.section{
-padding:100px 20px;
-text-align:center;
-}
-
-.section h2{
-font-family:'Great Vibes',cursive;
-font-size:clamp(2.5rem,6vw,3.5rem);
-color:#ff8acb;
-}
-
-.subtitle{
-margin:20px 0;
-}
-
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-/* CARD */
-.card{
-background:white;
-border-radius:20px;
-padding:20px;
-box-shadow:0 15px 40px rgba(255,138,203,0.15);
-transition:0.3s;
 display:flex;
 flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#ffd6ec;
+text-align:center;
 }
 
-.card:hover{
-transform:translateY(-10px) scale(1.02);
+.section{
+padding:80px 20px;
+text-align:center;
 }
 
-.destacada{
-border:2px solid #ff8acb;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
 }
 
 .card img{
 width:100%;
-height:220px;
-object-fit:cover;
-border-radius:15px;
-margin-bottom:10px;
+border-radius:10px;
 }
 
-.extra{display:none;}
-
-.card button{
-margin-top:10px;
+.btn{
 background:#ff8acb;
-border:none;
 color:white;
-padding:10px;
+padding:10px 20px;
 border-radius:20px;
-cursor:pointer;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
 }
 
-/* CONTACTO */
-.contacto{
-background:#fff0f7;
-}
-
-/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-font-size:25px;
 padding:15px;
 border-radius:50%;
-animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.1);}
-100%{transform:scale(1);}
-}
-
-/* MOBILE */
-@media (max-width:768px){
-
-.galeria{
-grid-template-columns:1fr;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
 }
